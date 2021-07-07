@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "Welcome to my CRUD APP. Use /products to see products list";
 });
 
-Route::resource('products','ProductController');
+Route::resource('/products','ProductController');
